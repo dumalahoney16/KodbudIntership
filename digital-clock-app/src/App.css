@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px 0;
+  background: #f0f4f8;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Digital Clock */
+.digital-clock {
+  font-size: 48px;
+  background: #fff;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  color: #5c6bc0;
+}
+
+/* Analog Clock */
+.analog-clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 8px solid #5c6bc0;
+  border-radius: 50%;
+  margin: 40px auto;
+  background: #fff;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: rotate(0deg);
+}
+
+.hand.hour {
+  width: 6px;
+  height: 60px;
+  background: #5c6bc0;
+}
+
+.hand.minute {
+  width: 4px;
+  height: 90px;
+  background: #3949ab;
+}
+
+.hand.second {
+  width: 2px;
+  height: 100px;
+  background: red;
+}
+
+.center-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
