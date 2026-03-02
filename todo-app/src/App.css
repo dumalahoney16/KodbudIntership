@@ -1,0 +1,128 @@
+/* App layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.App {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input & buttons */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #5c6bc0;
+  outline: none;
+  box-shadow: 0 0 5px rgba(92,107,192,0.3);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #5c6bc0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #3949ab;
+}
+
+/* Filters */
+div > button {
+  background: #eee;
+  color: #333;
+  margin-right: 5px;
+}
+
+div > button:hover {
+  background: #5c6bc0;
+  color: #fff;
+}
+
+/* Todo List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: all 0.3s;
+}
+
+li:hover {
+  background: #e0e0e0;
+}
+
+/* Todo Item */
+li span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+li input[type="checkbox"] {
+  transform: scale(1.3);
+  cursor: pointer;
+  accent-color: #5c6bc0;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+li input[type="text"] {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Completed task */
+.completed {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
